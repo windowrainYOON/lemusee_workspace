@@ -1,0 +1,147 @@
+@import "./variables.css";
+
+.nav {
+  width: 100%;
+  height: 400px;
+  flex-grow: 0;
+  background-color: #f9f9f9;
+  display: flex;
+  justify-content: center;
+}
+
+.navHug {
+  width: 1280px;
+  height: 400px;
+  padding: 70px 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.navMenu {
+  width: 1280px;
+  height: 187px;
+  margin: 0 0 43px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 143px;
+  height: 28px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 2px 5px 4px;
+  border-radius: 5px;
+}
+
+.logo h1 {
+  width: 133px;
+  height: 22px;
+  flex-grow: 0;
+  font-family: NotoSansKR;
+  font-size: 24px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 0.92;
+  letter-spacing: 3.6px;
+  text-align: left;
+  color: var(--title);
+}
+
+.navMenuTitle {
+  display: flex;
+  align-content: flex-end;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.navTitle {
+  height: 21px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 3px 6px 4px;
+  border-radius: 5px;
+}
+
+.navTitle:nth-child(1) {
+  width: 114px;
+}
+
+.navTitle:nth-child(2) {
+  width: 99px;
+}
+
+.navTitle:nth-child(3) {
+  width: 87px;
+}
+
+.navTitle:nth-child(4) {
+  width: 134px;
+}
+
+.navTitle h2 {
+  flex-grow: 0;
+  font-family: NotoSansKR;
+  font-size: 17px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 0.82;
+  letter-spacing: 2.55px;
+  text-align: right;
+  color: #888;
+}
+
+.navMenuBtn {
+  display: flex;
+  width: 1280px;
+  height: 30px;
+  padding: 6px 0 4px;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-grow: 0;
+  font-family: NotoSansKR;
+  font-size: 13px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.46;
+  letter-spacing: normal;
+  text-align: center;
+  color: #888;
+}
+
+.navContact ul {
+  display: flex;
+}
+
+.navContact ul li {
+  padding: 5 4px 0px;
+  border-radius: 5px;
+  gap: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.navLogin {
+  width: 103px;
+  height: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin: 0 0 0 919px;
+  padding: 0 4px 1px;
+  border-radius: 5px;
+}
