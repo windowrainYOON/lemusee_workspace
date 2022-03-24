@@ -1,5 +1,7 @@
 @import "./variables.css";
 
+/*------------헤더------------*/
+
 .nav {
   width: 100%;
   height: 400px;
@@ -33,24 +35,30 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap: 10px;
-  padding: 2px 5px 4px;
+  padding: 0px 5px 4px;
   border-radius: 5px;
+}
+
+.logo:hover {
+  background: var(--selectionBox);
+}
+
+.logo:active {
+  background: var(--pressed);
 }
 
 .logo h1 {
   width: 133px;
   height: 22px;
   flex-grow: 0;
-  font-family: NotoSansKR;
   font-size: 24px;
   font-weight: bold;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 0.92;
+  line-height: 1.3;
   letter-spacing: 3.6px;
   text-align: left;
   color: var(--title);
+  display: flex;
+  justify-content: flex-end;
 }
 
 .navMenuTitle {
@@ -58,6 +66,7 @@
   align-content: flex-end;
   flex-direction: column;
   justify-content: space-between;
+  align-items: flex-end;
 }
 
 .navTitle {
@@ -66,37 +75,32 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: 3px 6px 4px;
+  padding: 6px 5px 3px 6px;
   border-radius: 5px;
 }
 
-.navTitle:nth-child(1) {
-  width: 114px;
+.navTitle:hover {
+  background: var(--selectionBox);
 }
 
-.navTitle:nth-child(2) {
-  width: 99px;
+.navTitle:active {
+  background: var(--pressed);
 }
 
-.navTitle:nth-child(3) {
-  width: 87px;
-}
-
-.navTitle:nth-child(4) {
-  width: 134px;
+.navTitle h2:active {
+  color: var(--title);
 }
 
 .navTitle h2 {
   flex-grow: 0;
-  font-family: NotoSansKR;
   font-size: 17px;
   font-weight: 500;
   font-stretch: normal;
   font-style: normal;
-  line-height: 0.82;
+  line-height: auto;
   letter-spacing: 2.55px;
   text-align: right;
-  color: #888;
+  color: var(--dash);
 }
 
 .navMenuBtn {
@@ -107,7 +111,6 @@
   justify-content: space-between;
   flex-direction: row;
   flex-grow: 0;
-  font-family: NotoSansKR;
   font-size: 13px;
   font-weight: normal;
   font-stretch: normal;
@@ -115,7 +118,7 @@
   line-height: 1.46;
   letter-spacing: normal;
   text-align: center;
-  color: #888;
+  color: var(--dash);
 }
 
 .navContact ul {
@@ -123,7 +126,7 @@
 }
 
 .navContact ul li {
-  padding: 5 4px 0px;
+  padding: 3px 4px 0px;
   border-radius: 5px;
   gap: 10px;
   display: flex;
@@ -131,6 +134,15 @@
   justify-content: center;
   align-items: center;
   gap: 10px;
+}
+
+.navContact ul li:hover {
+  background: var(--selectionBox);
+}
+
+.navContact ul li:active {
+  background: var(--pressed);
+  color: var(--title);
 }
 
 .navLogin {
@@ -140,8 +152,206 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap: 10px;
-  margin: 0 0 0 919px;
-  padding: 0 4px 1px;
+  padding: 2px 4px 0px;
   border-radius: 5px;
+}
+
+.navLogin:hover {
+  background: var(--selectionBox);
+}
+
+.navLogin:active {
+  background: var(--pressed);
+  color: var(--title);
+}
+
+main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/*------------최신 영상------------*/
+
+.mainRecent {
+  width: 100%;
+  height: 575px;
+  background: var(--bgPointColor);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contentsRecent {
+  width: 1280px;
+  height: 100%;
+  display: flex;
+  padding: 40px 0 60px 0;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.contentsTitle {
+  height: 23px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 2px 5px 0px;
+  border-radius: 5px;
+}
+
+.contentsTitle:hover {
+  background: var(--selectionBox);
+}
+
+.contentsTitle:active {
+  background: var(--pressed);
+}
+
+.contentsTitle h3 {
+  font-size: 17px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: auto;
+  letter-spacing: 0.85px;
+  text-align: center;
+  color: var(--title);
+}
+
+.recentLecture {
+  width: 100%;
+  height: 435px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-content: space-between;
+  grid-column-gap: 40px;
+}
+
+.recentLectureCard {
+  width: 400px;
+  height: 125px;
+  border-radius: 5px;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px 5px;
+}
+
+.recentLectureCard:hover {
+  background: var(--selectionBox);
+}
+
+.recentLectureCard:active {
+  background: var(--pressed);
+}
+
+.recentLectureTitle {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.recentLectureName h4 {
+  height: 22px;
+  font-size: 15px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.75px;
+  text-align: left;
+  color: var(--title);
+}
+
+.recentLectureDate {
+  height: 14px;
+  font-size: 10px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.5px;
+  text-align: right;
+  color: var(--dash);
+}
+
+.recentLectureInfo {
+  font-size: 13px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.55px;
+  text-align: left;
+  color: var(--dash);
+}
+
+.recentLectureSpeaker {
+  font-size: 13px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.55px;
+  text-align: left;
+  color: var(--title);
+  text-decoration: underline;
+}
+
+/*------------추천 영상------------*/
+
+.mainRecommend {
+  width: 100%;
+  height: 1283px;
+  background: var(--backgroundColor);
+  display: flex;
+}
+
+/*------------금주의 레뮤지앙------------*/
+
+.mainLemusien {
+  width: 100%;
+  height: 645px;
+  display: flex;
+  background: var(--white);
+}
+
+/*------------레뮤제 조직도------------*/
+
+.mainStory {
+  width: 100%;
+  height: 886px;
+  display: flex;
+  background: var(--backgroundColor);
+}
+
+/*------------테마별 인덱스------------*/
+
+.mainCategory {
+  width: 100%;
+  height: 620px;
+  display: flex;
+  background: var(--bgPointColor);
+}
+
+/*------------레뮤제 임원들------------*/
+
+.mainExecutives {
+  width: 100%;
+  height: 1665px;
+  display: flex;
+  background: var(--backgroundColor);
+}
+
+/*------------푸터------------*/
+
+footer {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  background: var(--bgPointColor);
 }
