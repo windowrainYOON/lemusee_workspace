@@ -81,10 +81,12 @@
 
 .navTitle:hover {
   background: var(--selectionBox);
+  transition: background 0.3s ease;
 }
 
 .navTitle:active {
   background: var(--pressed);
+  transition: background 0.3s ease;
 }
 
 .navTitle h2:active {
@@ -138,11 +140,13 @@
 
 .navContact ul li:hover {
   background: var(--selectionBox);
+  transition: background 0.3s ease;
 }
 
 .navContact ul li:active {
   background: var(--pressed);
   color: var(--title);
+  transition: background 0.3s ease;
 }
 
 .navLogin {
@@ -158,11 +162,13 @@
 
 .navLogin:hover {
   background: var(--selectionBox);
+  transition: background 0.3s ease;
 }
 
 .navLogin:active {
   background: var(--pressed);
   color: var(--title);
+  transition: background 0.3s ease;
 }
 
 main {
@@ -204,10 +210,12 @@ main {
 
 .contentsTitle:hover {
   background: var(--selectionBox);
+  transition: background 0.3s ease;
 }
 
 .contentsTitle:active {
   background: var(--pressed);
+  transition: background 0.3s ease;
 }
 
 .contentsTitle h3 {
@@ -243,10 +251,12 @@ main {
 
 .recentLectureCard:hover {
   background: var(--selectionBox);
+  transition: background 0.3s ease;
 }
 
 .recentLectureCard:active {
   background: var(--pressed);
+  transition: background 0.2s ease;
 }
 
 .recentLectureTitle {
@@ -265,6 +275,9 @@ main {
   letter-spacing: -0.75px;
   text-align: left;
   color: var(--title);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .recentLectureDate {
@@ -281,6 +294,7 @@ main {
 
 .recentLectureInfo {
   font-size: 13px;
+  height: 48px;
   font-weight: normal;
   font-stretch: normal;
   font-style: normal;
@@ -288,6 +302,8 @@ main {
   letter-spacing: -0.55px;
   text-align: left;
   color: var(--dash);
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .recentLectureSpeaker {
@@ -309,6 +325,88 @@ main {
   height: 1283px;
   background: var(--backgroundColor);
   display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.contentsRecommend {
+  width: 1320px;
+  height: 100%;
+  padding: 150px 20px 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.recommendLecture {
+  width: 100%;
+  height: 850px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  align-content: space-between;
+  grid-column-gap: 40px;
+}
+
+.recommendLectureCard {
+  width: 290px;
+  height: 400px;
+  padding: 264px 10px 30px;
+  border-radius: 10px;
+  color: var(--white);
+  background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0.9) 82%,
+      #000 100%
+    ),
+    url(../img/card\ img.png);
+  background-size: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.recommendLectureCard:hover {
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.5) 0%, #000 100%),
+    url(../img/card\ img.png);
+}
+
+.recommendLectureCard:active {
+  background: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.9) 0%,
+      rgba(255, 255, 255, 0.5) 100%
+    ),
+    url(../img/card\ img.png);
+  color: var(--title);
+}
+
+.recommendLectureTitle h4 {
+  width: 100%;
+  font-size: 15px;
+  font-weight: bold;
+  letter-spacing: -0.75px;
+  text-align: left;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: inherit;
+}
+
+.recommendLectureInfo {
+  width: 100%;
+  height: 74px;
+  font-size: 13px;
+  letter-spacing: -0.65px;
+  text-align: left;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: inherit;
 }
 
 /*------------금주의 레뮤지앙------------*/
