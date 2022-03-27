@@ -1,42 +1,54 @@
 @import "./variables.css";
 
+html {
+  font-size: 62.5%;
+}
+
+.blind {
+  display: none;
+}
+
+body {
+  background-color: var(--bgPointColor);
+}
+
 /*------------헤더------------*/
 
 .nav {
   width: 100%;
-  height: 400px;
+  height: 40rem;
   flex-grow: 0;
-  background-color: #f9f9f9;
+  background-color: var(--backgroundColor);
   display: flex;
   justify-content: center;
 }
 
 .navHug {
-  width: 1280px;
-  height: 400px;
-  padding: 70px 0;
+  width: 128rem;
+  height: 40rem;
+  padding: 7rem 0;
   display: flex;
   flex-direction: column;
 }
 
 .navMenu {
-  width: 1280px;
-  height: 187px;
-  margin: 0 0 43px;
+  width: 128rem;
+  height: 18.7rem;
+  margin: 0 0 4.3rem;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 
 .logo {
-  width: 143px;
-  height: 28px;
+  width: 14.3rem;
+  height: 2.8rem;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: 0px 5px 4px;
-  border-radius: 5px;
+  padding: 0 0.5rem 0.4rem;
+  border-radius: 0.5rem;
 }
 
 .logo:hover {
@@ -48,13 +60,13 @@
 }
 
 .logo h1 {
-  width: 133px;
-  height: 22px;
+  width: 13.3rem;
+  height: 2rem;
   flex-grow: 0;
-  font-size: 24px;
+  font-size: 2.4rem;
   font-weight: bold;
   line-height: 1.3;
-  letter-spacing: 3.6px;
+  letter-spacing: 0.36rem;
   text-align: left;
   color: var(--title);
   display: flex;
@@ -70,13 +82,12 @@
 }
 
 .navTitle {
-  height: 21px;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: 6px 5px 3px 6px;
-  border-radius: 5px;
+  padding: 0.6rem 0.5rem 0.3rem 0.6rem;
+  border-radius: 0.5rem;
 }
 
 .navTitle:hover {
@@ -95,32 +106,32 @@
 
 .navTitle h2 {
   flex-grow: 0;
-  font-size: 17px;
+  font-size: 1.7rem;
   font-weight: 500;
   font-stretch: normal;
   font-style: normal;
   line-height: auto;
-  letter-spacing: 2.55px;
+  letter-spacing: 0.25rem;
   text-align: right;
-  color: var(--dash);
+  color: var(--unselectedText);
 }
 
 .navMenuBtn {
   display: flex;
-  width: 1280px;
-  height: 30px;
-  padding: 6px 0 4px;
+  width: 128rem;
+  height: 3rem;
+  padding: 0.6rem 0 0.4rem;
   justify-content: space-between;
   flex-direction: row;
   flex-grow: 0;
-  font-size: 13px;
+  font-size: 1.3rem;
   font-weight: normal;
   font-stretch: normal;
   font-style: normal;
   line-height: 1.46;
   letter-spacing: normal;
   text-align: center;
-  color: var(--dash);
+  color: var(--unselectedText);
 }
 
 .navContact ul {
@@ -128,14 +139,13 @@
 }
 
 .navContact ul li {
-  padding: 3px 4px 0px;
-  border-radius: 5px;
-  gap: 10px;
+  padding: 0.3rem 0.4rem 0;
+  border-radius: 0.5rem;
+  gap: 1.5rem;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap: 10px;
 }
 
 .navContact ul li:hover {
@@ -150,14 +160,14 @@
 }
 
 .navLogin {
-  width: 103px;
-  height: 20px;
+  width: 10.3rem;
+  height: 2rem;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: 2px 4px 0px;
-  border-radius: 5px;
+  padding: 0.2rem 0.4rem 0;
+  border-radius: 0.5rem;
 }
 
 .navLogin:hover {
@@ -181,7 +191,7 @@ main {
 
 .mainRecent {
   width: 100%;
-  height: 575px;
+  height: 57.5rem;
   background: var(--bgPointColor);
   display: flex;
   flex-direction: column;
@@ -189,23 +199,23 @@ main {
 }
 
 .contentsRecent {
-  width: 1280px;
+  width: 128rem;
   height: 100%;
   display: flex;
-  padding: 40px 0 60px 0;
+  padding: 4rem 0 6rem 0;
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-between;
 }
 
 .contentsTitle {
-  height: 23px;
+  height: 2.3rem;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: 2px 5px 0px;
-  border-radius: 5px;
+  padding: 0.2rem 0.5rem 0;
+  border-radius: 0.5rem;
 }
 
 .contentsTitle:hover {
@@ -219,34 +229,34 @@ main {
 }
 
 .contentsTitle h3 {
-  font-size: 17px;
+  font-size: 1.7rem;
   font-weight: bold;
   font-stretch: normal;
   font-style: normal;
   line-height: auto;
-  letter-spacing: 0.85px;
+  letter-spacing: 0.05rem;
   text-align: center;
   color: var(--title);
 }
 
 .recentLecture {
   width: 100%;
-  height: 435px;
+  height: 43.5rem;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   align-content: space-between;
-  grid-column-gap: 40px;
+  grid-column-gap: 4rem;
 }
 
 .recentLectureCard {
-  width: 400px;
-  height: 125px;
-  border-radius: 5px;
+  width: 40rem;
+  height: 12.5rem;
+  border-radius: 0.5rem;
   margin: 0;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 10px 5px;
+  padding: 1rem 0.5rem;
 }
 
 .recentLectureCard:hover {
@@ -266,13 +276,13 @@ main {
 }
 
 .recentLectureName h4 {
-  height: 22px;
-  font-size: 15px;
+  height: 2.2rem;
+  font-size: 1.5rem;
   font-weight: 500;
   font-stretch: normal;
   font-style: normal;
   line-height: normal;
-  letter-spacing: -0.75px;
+  letter-spacing: -0.07rem;
   text-align: left;
   color: var(--title);
   overflow: hidden;
@@ -281,38 +291,38 @@ main {
 }
 
 .recentLectureDate {
-  height: 14px;
-  font-size: 10px;
+  height: 1.4rem;
+  font-size: 1.3rem;
   font-weight: normal;
   font-stretch: normal;
   font-style: normal;
   line-height: normal;
-  letter-spacing: -0.5px;
+  letter-spacing: -0.02rem;
   text-align: right;
-  color: var(--dash);
+  color: var(--unselectedText);
 }
 
 .recentLectureInfo {
-  font-size: 13px;
-  height: 48px;
+  font-size: 1.3rem;
+  height: 4.8rem;
   font-weight: normal;
   font-stretch: normal;
   font-style: normal;
   line-height: normal;
-  letter-spacing: -0.55px;
+  letter-spacing: -0.02rem;
   text-align: left;
-  color: var(--dash);
+  color: var(--unselectedText);
   overflow: hidden;
   text-overflow: ellipsis;
 }
 
 .recentLectureSpeaker {
-  font-size: 13px;
+  font-size: 1.3rem;
   font-weight: normal;
   font-stretch: normal;
   font-style: normal;
   line-height: normal;
-  letter-spacing: -0.55px;
+  letter-spacing: -0.05rem;
   text-align: left;
   color: var(--title);
   text-decoration: underline;
@@ -322,7 +332,7 @@ main {
 
 .mainRecommend {
   width: 100%;
-  height: 1283px;
+  height: 128.3rem;
   background: var(--backgroundColor);
   display: flex;
   flex-direction: row;
@@ -330,9 +340,9 @@ main {
 }
 
 .contentsRecommend {
-  width: 1320px;
+  width: 132rem;
   height: 100%;
-  padding: 150px 20px 200px;
+  padding: 15rem 2rem 20rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -341,18 +351,18 @@ main {
 
 .recommendLecture {
   width: 100%;
-  height: 850px;
+  height: 85rem;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   align-content: space-between;
-  grid-column-gap: 40px;
+  grid-column-gap: 4rem;
 }
 
 .recommendLectureCard {
-  width: 290px;
-  height: 400px;
-  padding: 264px 10px 30px;
-  border-radius: 10px;
+  width: 29rem;
+  height: 40rem;
+  padding: 27rem 1rem 3rem;
+  border-radius: 1rem;
   color: var(--white);
   background: linear-gradient(
       to bottom,
@@ -384,9 +394,9 @@ main {
 
 .recommendLectureTitle h4 {
   width: 100%;
-  font-size: 15px;
+  font-size: 1.5rem;
   font-weight: bold;
-  letter-spacing: -0.75px;
+  letter-spacing: -0.05rem;
   text-align: left;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -396,9 +406,9 @@ main {
 
 .recommendLectureInfo {
   width: 100%;
-  height: 74px;
-  font-size: 13px;
-  letter-spacing: -0.65px;
+  height: 7.4rem;
+  font-size: 1.3rem;
+  letter-spacing: -0.02rem;
   text-align: left;
   font-weight: normal;
   font-stretch: normal;
@@ -413,25 +423,127 @@ main {
 
 .mainLemusien {
   width: 100%;
-  height: 645px;
+  height: 64.5rem;
   display: flex;
-  background: var(--white);
+}
+
+.lemusienSlideShow {
+  height: 64.5rem;
+  margin: 0;
+  overflow: hidden;
+}
+
+.slides {
+}
+
+.slides li {
+  float: left;
+}
+
+.controller span {
+}
+
+.controller span:hover {
+  border-color: rgba(128, 128, 128, 0.11);
+}
+
+.prev {
+}
+
+.prev:hover {
+}
+
+.next {
+}
+
+.next:hover {
 }
 
 /*------------레뮤제 조직도------------*/
 
 .mainStory {
   width: 100%;
-  height: 886px;
+  height: 88.6rem;
   display: flex;
+  justify-content: center;
   background: var(--backgroundColor);
+}
+
+.contentsStory {
+  width: 132rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6rem;
+  padding: 20rem 0;
+}
+
+.storyTeam {
+  width: 129rem;
+  height: 40.3rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  align-content: space-between;
+  grid-column-gap: 4rem;
+}
+
+.teamCard a {
+  width: 29rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 4rem 1rem;
+  border-radius: 1rem;
+}
+
+.teamCard a:hover {
+  background: var(--selectionBox);
+  transition: background 0.3s ease;
+}
+
+.teamCard a:active {
+  background: var(--pressed);
+  transition: background 0.3s ease;
+}
+
+.teamCardImg {
+  width: 15rem;
+  height: 15rem;
+  border-radius: 50%;
+  background-color: var(--unselectedText);
+}
+
+.teamCard span h4 {
+  width: 100%;
+  font-size: 1.7rem;
+  font-weight: bold;
+  letter-spacing: 0.08rem;
+  text-align: center;
+  color: var(--title);
+}
+
+.teamCard p {
+  width: 27rem;
+  height: 11rem;
+  font-size: 1.5rem;
+  letter-spacing: -0.03rem;
+  text-align: center;
+  line-height: 1.5;
+  font-style: normal;
+  font-weight: normal;
+  font-stretch: normal;
+  color: var(--unselectedText);
 }
 
 /*------------테마별 인덱스------------*/
 
 .mainCategory {
   width: 100%;
-  height: 620px;
+  height: 62rem;
   display: flex;
   background: var(--bgPointColor);
 }
@@ -440,7 +552,7 @@ main {
 
 .mainExecutives {
   width: 100%;
-  height: 1665px;
+  height: 166.5rem;
   display: flex;
   background: var(--backgroundColor);
 }
@@ -449,7 +561,132 @@ main {
 
 footer {
   width: 100%;
-  height: 200px;
+  height: 20rem;
   display: flex;
   background: var(--bgPointColor);
+  justify-content: center;
+}
+
+.contentsFooter {
+  width: 132rem;
+  height: 100%;
+  display: flex;
+  align-content: space-around;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footerLink {
+  width: 100%;
+  height: 140px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footerLogo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.footerLogo a {
+  width: 26rem;
+  height: 7rem;
+  border-radius: 1rem;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.footerLogo a:hover {
+  background: var(--selectionBox);
+  transition: background 0.3s ease;
+}
+
+.footerLogo a:active {
+  background: var(--pressed);
+  transition: background 0.3s ease;
+}
+
+.footerLogoImg {
+  width: 7rem;
+  height: 7rem;
+  background: url(../img/레뮤제_로고.png);
+  background-size: 7rem;
+}
+
+.footerLogoTitle {
+  width: 17.5rem;
+  height: 100%;
+  color: var(--title);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: space-between;
+}
+
+.footerLogoTitle span {
+  font-size: 1.7rem;
+  font-weight: bold;
+  line-height: normal;
+  letter-spacing: 0.3rem;
+  text-align: left;
+  color: inherit;
+}
+
+.footerLogoTitle p {
+  width: 100%;
+  height: 2.4rem;
+  font-size: 0.8rem;
+  line-height: normal;
+  letter-spacing: -0.04rem;
+  text-align: left;
+  color: inherit;
+}
+
+.footerInfo {
+  width: 86rem;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  align-content: space-between;
+}
+
+.footerInfoDiv {
+  width: 18rem;
+  height: 100%;
+  padding: 2rem 2rem 0rem 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.footerTitle {
+  width: 100%;
+  height: 2.1rem;
+  font-size: 1.3rem;
+  font-weight: 700;
+  text-align: left;
+  color: var(--title);
+}
+
+.footerText {
+  width: 100%;
+  height: 1.6rem;
+  font-size: 1.1rem;
+  letter-spacing: -0.05rem;
+  text-align: left;
+  color: var(--pressed);
+}
+
+.footerInfoDiv:nth-child(1) {
+  margin-top: 0.5rem;
+}
+
+.designerInfo {
+  width: 100%;
+  height: 6rem;
+  padding: 2rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
