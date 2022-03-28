@@ -5,9 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LEMUSEE</title>
     <link rel="shortcut icon" href="../icons/favicon.png" type="image/x-icon">
-    <link rel="stylesheet" href="../reset.css">
+    <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="./style.css">
-    <!-- <script defer src="../JS/slideShow.js" > --> 
+	<link rel="stylesheet" href="../slick/slick.css">
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script defer type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script defer type="text/javascript" src="slick/slick.min.js"></script>
 </head>
 <body>
     <header>
@@ -196,13 +199,20 @@
         </div>
         <div class="mainLemusien">
             <div class="lemusienSlideShow">
-                <ul class="slides">
-                    <li><img src="../img/고은영1.png" alt=""></li>
-                </ul>
+                <div class="centerAlign"><img src="../img/고은영1_full.jpg" alt=""></div>
+                <div class="centerAlign"><img src="../img/고은영2_full.jpg" alt=""></div>
+                <div class="centerAlign"><img src="../img/고은영3_full.jpg" alt=""></div>
+            </div>
+            <div class="contentsLemusien">
                 <p class="controller">
-                    <span class="prev"></span>
-                    <span class="next"></span>
+                    <span class="mainPrev"><img src="../icons/navigate_prev_black.svg" alt=""></span>
+                    <span class="mainNext"><img src="../icons/navigate_next_black.svg" alt=""></span>
                 </p>
+                <div class="lemusienInfo">
+                    <h4 class="lemusienTitle">LEMUSEIN OF THE WEEK</h4>
+                    <h4 class="lemusienName">고은영 레뮤지앙</h4>
+                    <p>2020년 2학기에 레뮤제에 들어온 고은영 레뮤지앙은 두 학기 간 어드민팀을 도맡으며 많은 강연 촬영 및 편집을 담당했습니다.</p>
+                </div>
             </div>
         </div>
         <div class="mainStory">
@@ -296,5 +306,11 @@
             <div class="designerInfo"><a href="">Designed by C.W.Yoon & W.S.Shin</a></div>
         </div>
     </footer>
+    <script type="text/javascript">
+        $(".lemuseinSlideShow").slick({
+            nextArrow:$('.mainNext'),
+            prevArrow:$('mainPrev')
+        });
+    </script>
 </body>
 </html>

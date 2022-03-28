@@ -1,4 +1,5 @@
-@import "./variables.css";
+@import "../css/variables.css";
+@import "../css/slick.css";
 
 html {
   font-size: 62.5%;
@@ -424,39 +425,118 @@ main {
 .mainLemusien {
   width: 100%;
   height: 64.5rem;
-  display: flex;
 }
 
 .lemusienSlideShow {
   height: 64.5rem;
-  margin: 0;
+  width: 100%;
+  position: relative;
   overflow: hidden;
 }
 
-.slides {
+.centerAlign {
+  text-align: center;
+  position: relative;
+  transform: translate(0%, -40%);
 }
 
-.slides li {
-  float: left;
+.centerAlign img {
+  width: 100%;
+  height: auto;
+  background-repeat: no-repeat;
+}
+
+.contentsLemusien {
+  height: 64.5rem;
+  width: 132rem;
+  position: relative;
+  top: -64.5rem;
+  margin: auto;
+}
+
+.controller {
+  position: relative;
+  top: 50%;
+  display: flex;
+  justify-content: space-between;
 }
 
 .controller span {
+  width: 5rem;
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.mainPrev {
+  position: inherit;
+  left: -5rem;
+}
+
+.mainNext {
+  position: inherit;
+  right: -5rem;
 }
 
 .controller span:hover {
-  border-color: rgba(128, 128, 128, 0.11);
+  background: rgba(219, 219, 219, 0.8);
 }
 
-.prev {
+.controller span:active {
+  background: var(--white);
 }
 
-.prev:hover {
+.lemusienInfo {
+  width: 40rem;
+  height: 15rem;
+  padding: 2.5rem 1.5rem 2.5rem 1.5rem;
+  border-radius: 1rem;
+  background-color: rgba(255, 255, 255, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  top: 60%;
+  left: 2rem;
 }
 
-.next {
+.lemusienTitle {
+  height: 19px;
+  font-size: 1.3rem;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.2rem;
+  text-align: left;
+  color: var(--title);
 }
 
-.next:hover {
+.lemusienName {
+  height: 35px;
+  font-size: 2.4rem;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.1rem;
+  text-align: left;
+  color: var(--title);
+}
+
+.lemusienInfo p {
+  width: 100%;
+  height: 4rem;
+  font-size: 1.3rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.05rem;
+  text-align: left;
+  color: var(--title);
 }
 
 /*------------레뮤제 조직도------------*/
