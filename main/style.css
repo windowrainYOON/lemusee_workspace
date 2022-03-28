@@ -1,5 +1,6 @@
 @import "../css/variables.css";
 @import "../css/slick.css";
+@import "../css/convention.css";
 
 html {
   font-size: 62.5%;
@@ -96,6 +97,10 @@ body {
   transition: background 0.3s ease;
 }
 
+.navTitle h2:hover {
+  color: var(--title);
+}
+
 .navTitle:active {
   background: var(--pressed);
   transition: background 0.3s ease;
@@ -182,151 +187,19 @@ body {
   transition: background 0.3s ease;
 }
 
-main {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-}
-
 /*------------최신 영상------------*/
 
 .mainRecent {
-  width: 100%;
   height: 57.5rem;
   background: var(--bgPointColor);
-  display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 .contentsRecent {
-  width: 128rem;
-  height: 100%;
-  display: flex;
-  padding: 4rem 0 6rem 0;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: space-between;
-}
-
-.contentsTitle {
-  height: 2.3rem;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 0.2rem 0.5rem 0;
-  border-radius: 0.5rem;
-}
-
-.contentsTitle:hover {
-  background: var(--selectionBox);
-  transition: background 0.3s ease;
-}
-
-.contentsTitle:active {
-  background: var(--pressed);
-  transition: background 0.3s ease;
-}
-
-.contentsTitle h3 {
-  font-size: 1.7rem;
-  font-weight: bold;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: auto;
-  letter-spacing: 0.05rem;
-  text-align: center;
-  color: var(--title);
-}
-
-.recentLecture {
-  width: 100%;
-  height: 43.5rem;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  align-content: space-between;
-  grid-column-gap: 4rem;
-}
-
-.recentLectureCard {
-  width: 40rem;
-  height: 12.5rem;
-  border-radius: 0.5rem;
-  margin: 0;
-  display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 1rem 0.5rem;
-}
-
-.recentLectureCard:hover {
-  background: var(--selectionBox);
-  transition: background 0.3s ease;
-}
-
-.recentLectureCard:active {
-  background: var(--pressed);
-  transition: background 0.2s ease;
-}
-
-.recentLectureTitle {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-.recentLectureName h4 {
-  height: 2.2rem;
-  font-size: 1.5rem;
-  font-weight: 500;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: -0.07rem;
-  text-align: left;
-  color: var(--title);
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-
-.recentLectureDate {
-  height: 1.4rem;
-  font-size: 1.3rem;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: -0.02rem;
-  text-align: right;
-  color: var(--unselectedText);
-}
-
-.recentLectureInfo {
-  font-size: 1.3rem;
-  height: 4.8rem;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: -0.02rem;
-  text-align: left;
-  color: var(--unselectedText);
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.recentLectureSpeaker {
-  font-size: 1.3rem;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: -0.05rem;
-  text-align: left;
-  color: var(--title);
-  text-decoration: underline;
+  padding: 4rem 0 3rem;
 }
 
 /*------------추천 영상------------*/
@@ -456,12 +329,12 @@ main {
 
 .controller {
   position: relative;
-  top: 50%;
+  top: 47%;
   display: flex;
   justify-content: space-between;
 }
 
-.controller span {
+.controller button {
   width: 5rem;
   height: 5rem;
   display: flex;
@@ -480,11 +353,11 @@ main {
   right: -5rem;
 }
 
-.controller span:hover {
+.controller button:hover {
   background: rgba(219, 219, 219, 0.8);
 }
 
-.controller span:active {
+.controller button:active {
   background: var(--white);
 }
 
@@ -622,18 +495,27 @@ main {
 /*------------테마별 인덱스------------*/
 
 .mainCategory {
-  width: 100%;
   height: 62rem;
-  display: flex;
   background: var(--bgPointColor);
+}
+
+.contentsCategory {
+  height: 62rem;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 4rem 0 6rem;
+}
+
+.contentsCategory .contentsTitle {
+  width: 15.3rem;
 }
 
 /*------------레뮤제 임원들------------*/
 
 .mainExecutives {
-  width: 100%;
   height: 166.5rem;
-  display: flex;
   background: var(--backgroundColor);
 }
 
@@ -740,7 +622,7 @@ footer {
   flex-direction: column;
 }
 
-.footerTitle {
+.footerInfo .footerTitle {
   width: 100%;
   height: 2.1rem;
   font-size: 1.3rem;
@@ -749,13 +631,14 @@ footer {
   color: var(--title);
 }
 
-.footerText {
+.footerInfoDiv .footerText {
   width: 100%;
   height: 1.6rem;
   font-size: 1.1rem;
+  font-weight: normal;
   letter-spacing: -0.05rem;
   text-align: left;
-  color: var(--pressed);
+  color: var(--unselectedText);
 }
 
 .footerInfoDiv:nth-child(1) {

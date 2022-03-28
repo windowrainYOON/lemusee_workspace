@@ -1,7 +1,7 @@
 :root {
   --title: #202020;
   --unselectedText: #888;
-  --borderBar: #D4D4D4;
+  --borderBar: #d4d4d4;
   --selectionBox: #dbdbdb;
   --backgroundColor: #f9f9f9;
   --bgPointColor: #eeeeee;
@@ -12,5 +12,4 @@
   --loginBoxSelected: #595959;
   --loginBoxPressed: #2e2e2e;
   --playerBg: #363636;
-  --dash title: #202020;
 }
