@@ -26,7 +26,9 @@ main {
 }
 
 .contents {
-  width: 128rem;
+  width: 132rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
   height: 100%;
   display: flex;
 }

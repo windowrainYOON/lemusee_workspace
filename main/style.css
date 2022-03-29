@@ -161,8 +161,8 @@
 
 .contentsRecent {
   flex-direction: column;
-  justify-content: space-between;
-  padding: 4rem 0 3rem;
+  gap: 2rem;
+  padding: 4rem 0 4rem;
 }
 
 .titleBox {
