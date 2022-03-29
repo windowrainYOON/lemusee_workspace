@@ -18,8 +18,13 @@ main {
   flex-direction: column;
 }
 
+.transparency {
+  background-color: transparent;
+}
+
 .section {
   width: 100%;
+  height: max-content;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -27,9 +32,9 @@ main {
 
 .contents {
   width: 132rem;
+  height: max-content;
   padding-left: 2rem;
   padding-right: 2rem;
-  height: 100%;
   display: flex;
 }
 
@@ -186,5 +191,15 @@ main {
 
 .btn:active {
   background: var(--pressed);
+  transition: background 0.3s ease;
+}
+
+.transparency .btn:hover {
+  background: rgba(219, 219, 219, 0.5);
+  transition: background 0.3s ease;
+}
+
+.transparency .btn:active {
+  background: rgba(183, 183, 183, 0.5);
   transition: background 0.3s ease;
 }
