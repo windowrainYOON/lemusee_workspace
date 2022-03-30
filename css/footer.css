@@ -1,6 +1,7 @@
 footer {
   width: 100%;
   height: 20rem;
+  bottom: 0;
   display: flex;
   background: var(--bgPointColor);
   justify-content: center;
@@ -31,11 +32,13 @@ footer {
 }
 
 .footerLogo a {
-  width: 26rem;
-  height: 7rem;
+  width: 28.5rem;
+  height: 9rem;
   border-radius: 1rem;
   display: flex;
+  align-items: center;
   gap: 1.5rem;
+  padding: 0 1rem;
 }
 
 .footerLogoImg {
@@ -53,7 +56,7 @@ footer {
 }
 
 .footerLogoTitle {
-  width: 17.5rem;
+  width: 18rem;
   height: 100%;
   color: var(--title);
   display: flex;

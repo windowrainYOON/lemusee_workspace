@@ -2,4 +2,260 @@
 
 body {
   background-color: var(--title);
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  z-index: 20;
+}
+
+main {
+  position: relative;
+  top: 0;
+  height: max-content;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+footer {
+  bottom: 0;
+}
+
+.greeting {
+  height: 94.4rem;
+  width: 100%;
+}
+
+.greetingImg {
+  width: 100%;
+  height: 102.4rem;
+  position: absolute;
+  top: 0;
+  background-image: url(/img/aboutus_greeting.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  background-position: -20%;
+}
+
+.gradation {
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(32, 32, 32, 0) 0%,
+    rgba(32, 32, 32, 0.84) 85%,
+    #202020 100%
+  );
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.contentsGreeting {
+  position: relative;
+  top: 0;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  color: var(--white);
+}
+
+.contentsGreeting img {
+  width: 20rem;
+  height: 20rem;
+  margin: 29rem 0 4rem;
+}
+
+.contentsGreeting span {
+  font-family: NanumMyeongjo;
+  font-size: 2.4rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.58;
+  letter-spacing: 0.36rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.contentsGreeting p {
+  font-size: 1.7rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.08rem;
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+.contentsAbout {
+  height: 328rem;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  z-index: 1;
+  position: relative;
+  top: -33rem;
+}
+
+.line {
+  width: 0.1rem;
+  height: 15rem;
+  background-color: var(--unselectedText);
+}
+
+.contentsAbout p {
+  font-size: 1.7rem;
+  letter-spacing: 0.08rem;
+  text-align: center;
+  color: var(--white);
+  line-height: normal;
+}
+
+.verticalBar {
+  width: 2rem;
+  height: 0.1rem;
+  background-color: var(--unselectedText);
+  margin: 2rem;
+}
+
+.contentsAbout p.p1 {
+  margin-top: 10rem;
+  margin-bottom: 2rem;
+}
+
+.contentsAbout p.p2 {
+  margin-top: 2rem;
+  margin-bottom: 9rem;
+}
+
+.contentsAbout p.p3 {
+  color: var(--unselectedText);
+  margin-bottom: 10rem;
+}
+
+.contentsAbout p.p4 {
+  margin-bottom: 4rem;
+}
+
+.contentsAbout p.p5 {
+  margin-bottom: 4rem;
+}
+
+.contentsAbout p.p6 {
+  margin-bottom: 7rem;
+}
+
+.contentsAbout p.p7 {
+  margin-top: 4.5rem;
+  margin-bottom: 4rem;
+}
+
+.contentsAbout p.p8 {
+  margin-bottom: 7rem;
+}
+
+.contentsAbout p.p9 {
+  margin-top: 5rem;
+  margin-bottom: 4rem;
+}
+
+.contentsAbout p.p10 {
+  margin-bottom: 7rem;
+}
+
+.contentsAbout span {
+  font-family: NanumMyeongjo;
+  font-size: 1.7rem;
+  letter-spacing: 0.08rem;
+  color: var(--white);
+  line-height: 1.4;
+}
+
+span.titleSize {
+  font-size: 2.4rem;
+  letter-spacing: 0.12rem;
+  text-align: center;
+}
+
+span.span1 {
+  margin-top: 35rem;
+  margin-bottom: 22rem;
+}
+
+span.span2 {
+  margin-bottom: 4.5rem;
+}
+
+span.span3 {
+  margin-bottom: 15rem;
+}
+
+.contentsAbout img {
+  width: 117rem;
+  height: auto;
+}
+
+span.span4 {
+  margin-top: 4rem;
+}
+
+.contentsAbout_centerImg {
+  width: 100%;
+  height: 33rem;
+  background-color: black;
+  position: relative;
+  top: 77.4rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.contentsAbout_centerImg .centerImg {
+  width: 132rem;
+  height: 100%;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background: url(/img/aboutus_centerImg.png);
+  background-size: cover;
+  background-position: center 65%;
+}
+
+.centerGradient {
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(
+    to right,
+    #000 0%,
+    rgba(0, 0, 0, 0) 49%,
+    #000 100%
+  );
+}
+
+a.applyBtn {
+  margin-top: 10rem;
+  background-color: var(--white);
+  width: 20rem;
+  height: 4rem;
+  border-radius: 2rem;
+  font-size: 1.5rem;
+  font-weight: blod;
+  letter-spacing: 0.05rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+a.applyBtn:hover {
+  background-color: var(--selectionBox);
+}
+
+a.applyBtn:active {
+  background-color: black;
+  color: var(--white);
 }

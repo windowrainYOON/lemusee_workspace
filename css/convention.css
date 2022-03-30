@@ -18,6 +18,10 @@ main {
   flex-direction: column;
 }
 
+.fixed {
+  position: fixed;
+}
+
 .transparency {
   background-color: transparent;
 }
